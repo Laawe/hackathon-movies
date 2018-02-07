@@ -1,12 +1,12 @@
 
-$(document).ready(function() {
-  //funcionalidad Materialize
+$(document).ready(function () {
+    //funcionalidad Materialize
 
-  // funcion para desplegar menú
-  $(".button-collapse").sideNav();
+    // funcion para desplegar menú
+    $(".button-collapse").sideNav();
 
-  //función del carrusel
-  $('.carousel.carousel-slider').carousel({fullWidth: true});
+    //función del carrusel
+    $('.carousel.carousel-slider').carousel({ fullWidth: true });
 
  //$('#movie-container').hide();
 
@@ -19,6 +19,7 @@ var $searcBtn = $('#search-btn');
 
 //función para llamar al api
 
+
 $('#search-btn').on('click',function(event){
   event.preventDefault;
   console.log($('#search').val());
@@ -27,4 +28,5 @@ $('#search-btn').on('click',function(event){
   $.getJSON($api, function(result){
 
   })
+
 });
