@@ -70,15 +70,15 @@ Crear un sitio web donde los hispanohablantes puedan compartir reseñas de pelic
 
 
 #### Agenda por día.
-|Integrante| Martes | Miercoles | Jueves | Viernes
-|--- | --- | --- | --- |
-|*Jazmin* | Brainstorming, planificación del trabajo, Ideación del proyecto, UX basics,logo y paleta de colores, git branch  |Vistas | Vistas | Detalles
-|*Laura* | Brainstorming, planificación del trabajo, Ideación del proyecto, UX basics, estructura html, APIs research, git master  | Api OMDV (pelis) | Implementar API y funcionalidades | Practicas presentacion
-|*Tony* |Brainstorming, planificación del trabajo, Ideación del proyecto, UX basics,APIs research, git branch  | API OMDV (pelis)| Implementar API y funcionalidades| Practicas Presentación
-|*Scarlett* | Brainstorming, planificación del trabajo, Ideación del proyecto, UX basics,APIS research, | Git branch, READme, recabación de información, estrategia basada en descubrimiento | Presentación | Practicas presentación.
+| Integrante | Martes | Miercoles | Jueves | Viernes
+| --- | --- | --- | --- |
+| *Jazmin* | Brainstorming, planificación del trabajo, Ideación del proyecto, UX basics,logo y paleta de colores, git branch  |Vistas | Vistas | Detalles
+| *Laura* | Brainstorming, planificación del trabajo, Ideación del proyecto, UX basics, estructura html, APIs research, git master  | Api OMDV (pelis) | Implementar API y funcionalidades | Practicas presentacion
+| *Tony* |Brainstorming, planificación del trabajo, Ideación del proyecto, UX basics,APIs research, git branch  | API OMDV (pelis)| Implementar API y funcionalidades| Practicas Presentación
+| *Scarlett* | Brainstorming, planificación del trabajo, Ideación del proyecto, UX basics,APIS research, | Git branch, READme, recabación de información, estrategia basada en descubrimiento | Presentación | Practicas presentación.
 
 
-********************************************************************************
+***
 
 ### Pre-requisitos
 
