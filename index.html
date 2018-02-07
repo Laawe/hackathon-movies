@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- links cdn-materialize -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- link styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>GifyCinema</title>
+</head>
+
+<body>
+    <!-- nav bar -->
+
+    <nav>
+        <div class="nav-wrapper #ffffff white">
+            <a href="#!" class="center brand-logo">
+                <img src="assets/images/filmicon.png" alt="Logo" id="filmicon">
+            </a>
+            <a href="#" data-activates="mobile-demo" class="right button-collapse">
+                <i class="material-icons menu-desplegable">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a class="menu-desplegable" href="views/profile.html">Perfil</a>
+                </li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li>
+                    <a href="views/profile.html">Perfil</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- carrusel -->
+
+    <div class="carousel carousel-slider center" data-indicators="true">
+        <div class="carousel-fixed-item center">
+        </div>
+        <div class="carousel-item red white-text" href="#one!">
+            <h2>Película 1</h2>
+            <p class="white-text">Nombre</p>
+        </div>
+        <div class="carousel-item amber white-text" href="#two!">
+            <h2>Película 2</h2>
+            <p class="white-text">Nombre</p>
+        </div>
+        <div class="carousel-item green white-text" href="#three!">
+            <h2>Película 3</h2>
+            <p class="white-text">Nombre</p>
+        </div>
+        <div class="carousel-item blue white-text" href="#four!">
+            <h2>Película 4</h2>
+            <p class="white-text">Nombre</p>
+        </div>
+    </div>
+
+    <!-- Links jQuery & JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- CDN javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <!-- Link app.js -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
