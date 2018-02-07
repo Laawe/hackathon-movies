@@ -8,21 +8,146 @@
     <!-- links cdn-materialize -->
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-
     <!-- link styles -->
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/profile.css">
     <title>GifyCinema</title>
+    <link rel="icon" type="image/png" href="../assets/images/filmicon.png">
 </head>
 
 <body>
-
-
+    <!--Barra de Navegacion-->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo"><img src="../assets/images/filmicon.png" alt="Logo"></a>
+            <div class="row">
+                <div class="input-field col s3">
+                    <input placeholder="Search" id="searcher" type="text" class="validate">
+                </div>
+            </div>
+            <div class="row">
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="fas fa-user-circle"></i><span> Username</span> <i class="fas fa-caret-down"></i></a>
+                    </li>
+                </ul>
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="#!">Mi perfil</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!">Buzón</a></li>
+                    <li><a href="#!">Notificaciones</a></li>
+                    <li><a href="#!">Noticias</a></li>
+                    <li><a href="#!">Invitar Amigos</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!">Configuración</a></li>
+                    <li><a href="#!">Cerrar sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Bloque de usuario-->
+    <div class="profile-view">
+        <div class="profile-picture">
+            <img src="../assets/images/user-example.jpg" class="userimage center-align" alt="Exapmle">
+            <h2>Username Example</h2>
+            <h4>@Username</h4>
+            <!--<div class="contributions">
+                <h2>Contributions</h2>
+            </div>
+            <div class="contributions">
+                <h2>Movie List</h2>
+            </div>
+            <div class="contributions">
+                <h2>Followers</h2>
+            </div>-->
+        </div>
+    </div>
+    <!--Tabs Section-->
+    <div class="row">
+        <div class="col s12 divtab">
+            <ul class="tabs">
+                <li class="tab col xs8"><a class="active" href="#test1">About</a></li>
+                <li class="tab col xs8"><a href="#test2">Conversations</a></li>
+                <li class="tab col xs8"><a href="#test3">Following</a></li>
+            </ul>
+            <a class="waves-effect waves-light btn"><i class="fas fa-cog"></i> Edit Profile</a>
+        </div>
+        <div id="test1" class="col s12">
+            <div class="row">
+                <div class="description col 4">
+                    <div class="bio">
+                        <p>Aquí los usuarios pondrán una pequeña descripción biográfica
+                        </p>
+                    </div>
+                    <div class="tastes">
+                        <div class="chip">
+                            Horror
+                        </div>
+                        <div class="chip">
+                            Drama
+                        </div>
+                        <div class="chip">
+                            Sci-Fi
+                        </div>
+                        <div class="chip">
+                            Documental
+                        </div>
+                        <div class="chip">
+                            Super Heroes
+                        </div>
+                    </div>
+                    <div class="share">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest"></i>
+                        <i class="fab fa-tumblr"></i>
+                        <i class="fab fa-google-plus"></i>
+                    </div>
+                </div>
+                <div class="collections col 8">
+                    <div class="col s12 m7">
+                        <h2 class="header">Tus Contribuciones.</h2>
+                        <div class="card horizontal">
+                            <div class="card-image">
+                                <img src="../assets/images/posters/deadpool.jpg">
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m7">
+                        <div class="card horizontal">
+                            <div class="card-image">
+                                <img src="../assets/images/posters/coco.jpg">
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="test2" class="col s12">Test 2</div>
+        <div id="test3" class="col s12">Test 3</div>
+    </div>
 
     <!-- Links jQuery & JavaScript -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
     <!-- CDN javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
     <!-- Link app.js -->
     <script src="js/app.js"></script>
