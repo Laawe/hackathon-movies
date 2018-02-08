@@ -6,7 +6,7 @@ $('#btn-comment').on('click', function (e) {
     console.log($textarea);
     //contenedores y crear dom de donde irán los comentarios
     var $firstDiv = $('<div />', {
-        "class": "col s9 offset-s2 m6 l6 z-depth-3",
+        "class": "col s9 offset-s2 m6 offset-m3 l6 offset-l3 z-depth-3",
         "id": "first-div"
     });
     // append to firstdiv
@@ -46,6 +46,8 @@ $('#btn-comment').on('click', function (e) {
     $firstDiv.append($comment);
     //
     $('#container-post').append($firstDiv);
+
+    $('#textarea1').val(" ")
 
 
 
