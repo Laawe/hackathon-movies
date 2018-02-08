@@ -2,171 +2,255 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- links cdn-materialize -->
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- links cdn-materialize -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
-  <!-- link styles -->
-  <link rel="stylesheet" href="css/main.css">
-  <title>GifyCinema</title>
+    <!-- link styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>GifyCinema</title>
+    <link rel="icon" type="image/png" href="assets/images/filmicon.png">
 </head>
 
 <body>
-  <!-- nav bar -->
-
-  <nav>
-    <div class="nav-wrapper #ffffff white">
-      <a href="#!" class="center brand-logo">
-        <img src="assets/images/filmicon.png" alt="Logo" id="filmicon">
-      </a>
-      <a href="#" data-activates="mobile-demo" class="right button-collapse">
-        <i class="material-icons menu-desplegable">menu</i>
-      </a>
-      <ul class="right hide-on-med-and-down">
-        <li>
-
-          <div class="center row">
-
-            <div class="col s12 ">
-
-              <div class="row" id="topbarsearch">
-
-                <div class="input-field col s6 m12 red-text">
-
-                  <input type="text" placeholder="search" id="search" class="">
-
+    <!--Vista splash-->
+    <div class="row" id="splash">
+        <div class="col s12 m12">
+            <img class="image-responsive center-block" src="assets/images/gifycinema2.png" alt="Logo">
+            <div class="preloader-wrapper small active">
+                <div class="spinner-layer spinner-red-only">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper center">
+                        <div class="circle"></div>
+                    </div>
                 </div>
-
-              </div>
-
             </div>
+        </div>
+    </div>
+    <!-- nav bar -->
 
-          </div>
+    <div id="main">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="left brand-logo">
+                    <img src="assets/images/filmicon.png" alt="Logo" id="filmicon">
+                </a>
+                <a href="#" data-activates="mobile-demo" class="right button-collapse">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <div class="center row">
+                            <div class="col s12 ">
+                                <div class="row" id="topbarsearch">
+                                    <div class="input-field col s6 m12 red-text">
+                                        <input type="text" placeholder="Search" id="search">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="btn waves-effect waves-light" id="search-btn" type="submit" name="action">Buscar película</button>
+                    </li>
+                    <li>
+                        <a class="menu-desplegable" href="views/profile.html">LOG IN</a>
+                    </li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li>
+                        <div class="center row">
+                            <div class="col s12 ">
+                                <div class="row" id="topbarsearch">
+                                    <div class="input-field col s6 m12 red-text">
+                                        <input type="text" placeholder="search" id="autocomplete-input" class="autocomplete red-text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Buscar película</button>
+                    </li>
+                    <li>
+                        <li>
+                            <a href="views/profile.html">Perfil</a>
+                        </li>
+                </ul>
+            </div>
+        </nav>
 
-        </li>
+        <!-- carrusel -->
+        <!--<div id="carousel" class="carousel center-block">
+            <a class="carousel-item" href="#one!"><img src="assets/images/posters/brave.jpg"></a>
+            <a class="carousel-item" href="#two!"><img src="assets/images/posters/coco.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="assets/images/posters/deadpool.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="assets/images/posters/avatar.jpg"></a>
+            <a class="carousel-item" href="#six!"><img src="assets/images/posters/exorcist.jpg"></a>
+            <a class="carousel-item" href="#seven!"><img src="assets/images/posters/moonlight.jpg"></a>
+            <a class="carousel-item" href="#eight!"><img src="assets/images/posters/shape.jpg"></a>
+            <a class="carousel-item" href="#nine!"><img src="assets/images/posters/star-wars.jpg"></a>
+            <a class="carousel-item" href="#ten!"><img src="assets/images/posters/titanic.jpg"></a>
+        </div>-->
 
-        <li>
-          <button class="btn waves-effect waves-light" id="search-btn" type="submit" name="action">Buscar película</button>
-        </li>
-        <li>
-          <a class="menu-desplegable" href="views/profile.html">Perfil</a>
-        </li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li>
+        <div class="carousel carousel-slider center" data-indicators="true">
+            <div class="carousel-fixed-item center">
+            </div>
+            <div class="carousel-item red white-text" href="#one!">
+                <img class="car-img" src="assets/images/banners/assassins.jpg" alt="">
+                <p class="white-text">Assassin's Creed</p>
+            </div>
+            <div class="carousel-item amber white-text" href="#two!">
+                <img class="car-img" src="assets/images/banners/guardians.jpg" alt="">
+                <p class="white-text">Guadrianes de la Galaxia</p>
+            </div>
+            <div class="carousel-item green white-text" href="#three!">
+                <img class="car-img" src="assets/images/banners/lego-batman.jpg" alt="">
+                <p class="white-text">Lego Batman: La Pelicula</p>
+            </div>
+            <div class="carousel-item blue white-text" href="#four!">
+                <img class="car-img" src="assets/images/banners/avengers.jpg" alt="">
+                <p class="white-text">The Avengers</p>
+            </div>
+        </div>
 
-          <div class="center row">
 
-            <div class="col s12 ">
+        <!--Tarjeta de pelicula-->
 
-              <div class="row" id="topbarsearch">
-
-                <div class="input-field col s6 m12 red-text">
-
-                  <input type="text" placeholder="search" id="autocomplete-input" class="autocomplete red-text">
-
+        <div class="row movie-container" id="movie-container">
+            <div class="col m8 l6 offset-m2 offset-l3">
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <img class="image-responsive movie-img" id="movie-img" src="assets/images/incompresa.jpg">
+                    </div>
+                    <div class="card-stacked hoverable">
+                        <div class="card-content">
+                            <h4 class="movie-title" id="movie-title">INCOMPRESA</h4>
+                            <hr>
+                            <h3 class="card-title grey-text text-darken-4 movie-director" id="movie-director">Director</h3>
+                            <p class="movie-director-content" id="movie-director-content">Asia Argento</p>
+                            <h3 class="card-title grey-text text-darken-4 movie-year" id="movie-year">Año</h3>
+                            <p class="movie-year-content" id="movie-year-content">2015</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                        </div>
+                    </div>
                 </div>
-
-              </div>
-
             </div>
+        </div>
 
-          </div>
 
-        </li>
+    </div>
 
+    </li>
+
+    <li>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Buscar película</button>
+    </li>
+    <li>
         <li>
-          <button class="btn waves-effect waves-light" type="submit" name="action">Buscar película</button>
-        </li>
-        <li>
-          <li>
             <a href="views/profile.html">Perfil</a>
-          </li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- carrusel -->
-
-  <div class="carousel carousel-slider center" data-indicators="true" id="carousel">
-    <div class="carousel-fixed-item center">
-    </div>
-    <div class="carousel-item red white-text" href="#one!">
-      <h2>Película 1</h2>
-      <p class="white-text">Nombre</p>
-    </div>
-    <div class="carousel-item amber white-text" href="#two!">
-      <h2>Película 2</h2>
-      <p class="white-text">Nombre</p>
-    </div>
-    <div class="carousel-item green white-text" href="#three!">
-      <h2>Película 3</h2>
-      <p class="white-text">Nombre</p>
-    </div>
-    <div class="carousel-item blue white-text" href="#four!">
-      <h2>Película 4</h2>
-      <p class="white-text">Nombre</p>
-    </div>
-  </div>
-
-
-  <!--Tarjeta de pelicula-->
-
-  <div class="row movie-container" id="movie-container">
-    <div class="col m8 l6 offset-m2 offset-l3">
-      <div class="card horizontal">
-        <div class="card-image">
-          <img class="image-responsive movie-img" id="movie-img" src="assets/images/incompresa.jpg">
+        </li>
+        </ul>
         </div>
-        <div class="card-stacked hoverable">
-          <div class="card-content">
-            <h4 class="movie-title" id="movie-title">INCOMPRESA</h4>
-            <hr>
-            <h3 class="card-title grey-text text-darken-4 movie-director" id="movie-director">Director</h3>
-            <p class="movie-director-content" id="movie-director-content">Asia Argento</p>
-            <h3 class="card-title grey-text text-darken-4 movie-year" id="movie-year">Año</h3>
-            <p class="movie-year-content" id="movie-year-content">2015</p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-          </div>
+        </nav>
+
+        <!-- carrusel -->
+
+        <div class="carousel carousel-slider center" data-indicators="true" id="carousel">
+            <div class="carousel-fixed-item center">
+            </div>
+            <div class="carousel-item red white-text" href="#one!">
+                <h2>Película 1</h2>
+                <p class="white-text">Nombre</p>
+            </div>
+            <div class="carousel-item amber white-text" href="#two!">
+                <h2>Película 2</h2>
+                <p class="white-text">Nombre</p>
+            </div>
+            <div class="carousel-item green white-text" href="#three!">
+                <h2>Película 3</h2>
+                <p class="white-text">Nombre</p>
+            </div>
+            <div class="carousel-item blue white-text" href="#four!">
+                <h2>Película 4</h2>
+                <p class="white-text">Nombre</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <!--Comentario(posteado)-->
 
 
-  <div class="row" id="container-post"></div>
+        <!--Tarjeta de pelicula-->
 
-  <!--input comentario-->
-
-  <div class="center row">
-    <form class="col s8 m8 l8  offset-s2 offset-m2 offset-l2 z-depth-3">
-      <div class="row">
-        <div class="input-field col s12">
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label for="textarea1"></label>
+        <div class="row movie-container" id="movie-container">
+            <div class="col m8 l6 offset-m2 offset-l3">
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <img class="image-responsive movie-img" id="movie-img" src="assets/images/incompresa.jpg">
+                    </div>
+                    <div class="card-stacked hoverable">
+                        <div class="card-content">
+                            <h4 class="movie-title" id="movie-title">INCOMPRESA</h4>
+                            <hr>
+                            <h3 class="card-title grey-text text-darken-4 movie-director" id="movie-director">Director</h3>
+                            <p class="movie-director-content" id="movie-director-content">Asia Argento</p>
+                            <h3 class="card-title grey-text text-darken-4 movie-year" id="movie-year">Año</h3>
+                            <p class="movie-year-content" id="movie-year-content">2015</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <button class="btn waves-effect waves-light" id="btn-comment" type="button" name="action">Comentar</button>
-    </form>
-  </div>
+
+        <!--Comentario(posteado)-->
 
 
-  <!-- Links jQuery & JavaScript -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <div class="row" id="container-post"></div>
+        >>>>>>> upstream/master
 
-  <!-- CDN javascript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <!--input comentario-->
 
-  <!-- Link app.js -->
-  <script src="js/app.js"></script>
-  <script src="js/comentarios.js"></script>
+        <div class="center row">
+            <form class="col s8 m8 l8  offset-s2 offset-m2 offset-l2 z-depth-3">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1"></label>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light" id="btn-comment" type="submit" name="action">Comentar</button>
+            </form>
+        </div>
+
+        </div>
+
+        <!-- Links jQuery & JavaScript -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+        </div>
+        <button class="btn waves-effect waves-light" id="btn-comment" type="button" name="action">Comentar</button>
+        </form>
+        </div>
+
+
+        <!-- CDN javascript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+        <!-- Link app.js -->
+        <script src="js/app.js"></script>
+        <script src="js/comentarios.js"></script>
 </body>
 
 </html>

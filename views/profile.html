@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -82,7 +83,9 @@
                         <p>Aquí los usuarios pondrán una pequeña descripción biográfica
                         </p>
                     </div>
+                    <hr>
                     <div class="tastes">
+                        <h6 style="color:lightgray;">Favorite Genres</h6>
                         <div class="chip">
                             Horror
                         </div>
@@ -99,18 +102,31 @@
                             Super Heroes
                         </div>
                     </div>
+                    <hr>
                     <div class="share">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-pinterest"></i>
-                        <i class="fab fa-tumblr"></i>
-                        <i class="fab fa-google-plus"></i>
+                        <h6 style="color: lightgray;">Share Profile</h6>
+                        <div class="social" style="background-color:rgb(59,89,152);">
+                            <a class="sns" href=""><i align="center" class="fab fa-facebook-f"></i></a>
+                        </div>
+                        <div class="social" style="background-color:rgb(85,172,238);">
+                            <a class="sns" href=""><i align="center" class="fab fa-twitter"></i></a>
+                        </div>
+                        <div class="social" style="background-color:rgb(189,8,28);">
+                            <a class="sns" href=""><i align="center" class="fab fa-pinterest"></i></a>
+                        </div>
+                        <div class="social" style="background-color:rgb(50,80,109);">
+                            <a class="sns" href=""><i align="center" class="fab fa-tumblr"></i></a>
+                        </div>
+                        <div class="social" style="background-color:rgb(219,68,55);">
+                            <a class="sns" href=""><i align="center" class="fab fa-google-plus"></i></a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="collections col s8">
+                <div class="collections col s7 push-s1">
                     <div class="col s12 m7">
-                        <h3>Tus Contribuciones.</h3>
+                        <h4>Tus contribuciones</h4>
+                        <hr>
 
                         <div class="card horizontal">
                             <div class="card-image">
@@ -144,8 +160,35 @@
                 </div>
             </div>
         </div>
-        <div id="test2" class="col s12">Test 2</div>
-        <div id="test3" class="col s12">Test 3</div>
+        <div id="test2" class="col s12">
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <img class="userimage" src="../assets/images/user-example.jpg" alt="User">
+                            <textarea id="textarea1" class="materialize-textarea" placeholder="Put a message"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="test3" class="col s12">
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="../assets/images/another-user.jpg">
+                            <span class="card-title">Beatrix Kiddo</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="fas fa-plus"></i></a>
+                        </div>
+                        <div class="card-content">
+                            <p>I am a weirdo, what a hell, am I doing here, I don't belong here. Don't mess with me.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
     <!-- Links jQuery & JavaScript -->
