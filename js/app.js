@@ -1,5 +1,16 @@
+//Funcion para la vista splash
+$(document).ready(function() {
+    setTimeout(function() {
+        $("#splash").fadeOut(500);
+    }, 3000); /*oculta la pantalla inicial*/
+    setTimeout(function() {
+        $("#main").fadeIn(500);
+    }, 3000); /*Muestra la pantalla Principal*/
 
-$(document).ready(function () {
+
+});
+
+$(document).ready(function() {
     //funcionalidad Materialize
 
     // funcion para desplegar menú
@@ -7,8 +18,11 @@ $(document).ready(function () {
 
     //función del carrusel
     $('.carousel.carousel-slider').carousel({ fullWidth: true });
+    //$(document).ready(function() {
+    //$('.carousel').carousel();
+    //});
 
- //$('#movie-container').hide();
+    //$('#movie-container').hide();
 
 });
 
@@ -20,13 +34,13 @@ var $searcBtn = $('#search-btn');
 //función para llamar al api
 
 
-$('#search-btn').on('click',function(event){
-  event.preventDefault;
-  console.log($('#search').val());
-  var $api = $apiURL + $('#search').val() + $apiKey;
-  console.log($api);
-  $.getJSON($api, function(result){
+$('#search-btn').on('click', function(event) {
+    event.preventDefault;
+    console.log($('#search').val());
+    var $api = $apiURL + $('#search').val() + $apiKey;
+    console.log($api);
+    $.getJSON($api, function(result) {
 
-  })
+    })
 
 });
