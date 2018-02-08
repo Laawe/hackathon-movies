@@ -1,14 +1,23 @@
 /* estilos nav bar index.html*/
-.menu-desplegable{
+
+.menu-desplegable {
     color: black;
 }
 
-#filmicon{
+#filmicon {
     height: 8vh;
     padding-top: 1vh;
     padding-left: 1vh;
 }
 
 #btn-comment {
-  margin-bottom: 5vh;
+    margin-bottom: 5vh;
+}
+
+/*estilo al span de comentarios */
+.row .col.offset-s2{
+    margin-bottom: 5vh;
+}
+.comment-movies{
+    text-align: center;    
 }
