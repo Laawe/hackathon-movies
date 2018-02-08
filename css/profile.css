@@ -1,80 +1,97 @@
-                                                                                                                                                                                                                                    /*Estilos de la barra de navegacion*/
-                                                                                                                                                                                                                                    
-                                                                                                                                                                                                                                    .row {
-                                                                                                                                                                                                                                        margin-bottom: 0%;
-                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                    
-                                                                                                                                                                                                                                    .brand-logo>img {
-                                                                                                                                                                                                                                        width: 4vw;
-                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                    
-                                                                                                                                                                                                                                    #nav-mobile {
-                                                                                                                                                                                                                                        margin-top: -5%;
-                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                    
-                                                                                                                                                                                                                                    #nav-mobile>li>a>img {
-                                                                                                                                                                                                                                        width: 3vw;
-                                                                                                                                                                                                                                        margin-top: 5px;
-                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                    
-                                                                                                                                                                                                                                    #searcher {
-                                                                                                                                                                                                                                        background-color: white;
-                                                                                                                                                                                                                                        padding-left: 10px;
-                                                                                                                                                                                                                                        border-radius: 5px;
-                                                                                                                                                                                                                                        margin-left: 20vw;
-                                                                                                                                                                                                                                        margin-bottom: .8vw;
-                                                                                                                                                                                                                                        color: black;
-                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                    /*Estilos del Perfil*/
-                                                                                                                                                                                                                                    
-                                                                                                                                                                                                                                    .profile-view {
-                                                                                                                                                                                                                                        background-image: url("../assets/images/sith.jpg");
-                                                                                                                                                                                                                                        background-repeat: no-repeat;
-                                                                                                                                                                                                                                        background-attachment: fixed;
-                                                                                                                                                                                                                                        background-size: cover;
-                                                                                                                                                                                                                                        overflow: hidden;
-                                                                                                                                                                                                                                        max-width: 1242px;
-                                                                                                                                                                                                                                        margin-top: -5%;
-                                                                                                                                                                                                                                        width: 100vw;
-                                                                                                                                                                                                                                        height: 65vh;
-                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                    
-                                                                                                                                                                                                                                    .profile-picture {
-                                                                                                                                                                                                                                        text-align: center;
-                                                                                                                                                                                                                                        color: white;
-                                                                                                                                                                                                                                        font-size;
-                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                    
-                                                                                                                                                                                                                                    .userimage {
-                                                                                                                                                                                                                                        border-radius: 50%;
-                                                                                                                                                                                                                                        margin-top: 10vh;
-                                                                                                                                                                                                                                        margin-right: 12vw;
-                                                                                                                                                                                                                                        width: 8vw;
-                                                                                                                                                                                                                                        height: 16vh;
-                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                    
-                                                                                                                                                                                                                                    .profile-picture> {}
-                                                                                                                                                                                                                                    
-                                                                                                                                                                                                                                    .waves-light {
-                                                                                                                                                                                                                                        float: right;
-                                                                                                                                                                                                                                        margin-top: -3vw
-                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                    
-                                                                                                                                                                                                                                    .divtab {
-                                                                                                                                                                                                                                        margin-left: 5vw;
-                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                    /*Estilos de Tabs*/
-                                                                                                                                                                                                                                    
+/*Estilos de la barra de navegacion*/
 
-                                                                                                                                                                                                                                    #test1,
-                                                                                                                                                                                                                                    #test2,
-                                                                                                                                                                                                                                    #test3 {
-                                                                                                                                                                                                                                        background-color: rgb(252, 246, 184);
-                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                    
-                                                                                                                                                                                                                                    #test1>.row>.description {
-                                                                                                                                                                                                                                        width: 30vw;
-                                                                                                                                                                                                                                        border: 1px solid rgb(230, 224, 161);
-                                                                                                                                                                                                                                        background-color: rgb(225, 225, 225);
-                                                                                                                                                                                                                                    }
+.row {
+    margin-bottom: 0%;
+}
 
+.brand-logo>img {
+    width: 4vw;
+}
+
+#nav-mobile {
+    margin-top: -5%;
+}
+
+#nav-mobile>li>a>img {
+    width: 3vw;
+    margin-top: 5px;
+}
+
+#searcher {
+    background-color: white;
+    padding-left: 10px;
+    border-radius: 5px;
+    margin-left: 20vw;
+    margin-bottom: .8vw;
+    color: black;
+}
+
+
+/*Estilos del Perfil*/
+
+.profile-view {
+    background-image: url("../assets/images/sith.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    margin-top: 0%;
+    max-width: 1349px;
+    width: 100vw;
+    height: 65vh;
+}
+
+.profile-picture {
+    text-align: center;
+    color: white;
+}
+
+.userimage {
+    border-radius: 50%;
+    margin-top: 10vh;
+    margin-right: 12vw;
+    width: 8vw;
+    height: 16vh;
+}
+
+.profile-picture> {}
+
+.waves-light {
+    float: right;
+    margin-top: -3vw;
+}
+
+
+/*Estilos de Tabs*/
+
+#test1>.row>.description {
+    width: 30vw;
+    height: 50vh;
+    padding: 20px;
+    margin-left: 3vh;
+    margin-top: 3vw;
+    border: 1px solid rgb(234, 86, 76);
+    border-radius: 5px;
+}
+
+.social {
+    display: inline-block;
+    margin: 7px;
+    width: 10%;
+    padding: 7px;
+    text-align: center;
+    border-radius: 100%;
+}
+
+.sns {
+    color: white;
+}
+
+#test2>.row>.col>.row {
+    margin-top: 3%;
+    margin-left: 7%;
+}
+
+.card-image>.btn-floating {
+    text-align: center
+}
