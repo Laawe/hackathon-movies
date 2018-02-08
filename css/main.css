@@ -1,53 +1,59 @@
-                                /*Estilos para vista splash*/
-                                
-                                #splash {
-                                    max-width: 1349px;
-                                    width: 100vw;
-                                    height: 100vh;
-                                }
-                                
-                                .preloader-wrapper {
-                                    margin-left: 48vw;
-                                    margin-top: -10%;
-                                    position: absolute;
-                                }
-                                /* estilos nav bar index.html*/
-                                
-                                #main {
-                                    display: none;
-                                }
-                                
-                                #search {
-                                    background-color: white;
-                                    padding-left: 10px;
-                                    border-radius: 5px;
-                                    margin-bottom: .8vw;
-                                    color: black;
-                                }
-                                
-                                .menu-desplegable {
-                                    color: white;
-                                }
-                                
-                                #filmicon {
-                                    height: 8vh;
-                                    padding-top: 1vh;
-                                    padding-left: 1vh;
-                                }
-                                /*Estilos para el carrusel*/
-                                /*.carousel {
+/*Estilos para vista splash*/
+
+#splash {
+    max-width: 1349px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.preloader-wrapper {
+    margin-left: 48vw;
+    margin-top: -10%;
+    position: absolute;
+}
+
+
+/* estilos nav bar index.html*/
+
+#main {
+    display: none;
+}
+
+#search {
+    background-color: white;
+    padding-left: 10px;
+    border-radius: 5px;
+    margin-bottom: .8vw;
+    color: black;
+}
+
+.menu-desplegable {
+    color: white;
+}
+
+#filmicon {
+    height: 8vh;
+    padding-top: 1vh;
+    padding-left: 1vh;
+}
+
+
+/*Estilos para el carrusel*/
+
+
+/*.carousel {
                                     margin-top: .1%;
                                     overflow: hidden;
                                     max-width: 1349px;
                                     width: 100vw;
                                     height: 65vh
                                 }*/
-                                
-                                #btn-comment {
-                                    margin-bottom: 5vh;
-                                }
-                                
-                                .car-img {
-                                    height: 80vh;
-                                    width: 80vw;
-                                }
+
+#btn-comment {
+    margin-bottom: 5vh;
+}
+
+.car-img {
+    height: 80vh;
+    width: 80vw;
+}
