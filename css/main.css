@@ -21,3 +21,8 @@
 .comment-movies{
     text-align: center;    
 }
+
+/*estilo al botón y logo de gif*/
+#logo-gif{
+    height: 6vh;
+}
