@@ -214,43 +214,43 @@
         </div>
 
         <!--Comentario(posteado)-->
-
-
         <div class="row" id="container-post"></div>
-        >>>>>>> upstream/master
-
+       
         <!--input comentario-->
-
         <div class="center row">
-            <form class="col s8 m8 l8  offset-s2 offset-m2 offset-l2 z-depth-3">
-                <div class="row">
-                    <div class="input-field col s12">
-                        <textarea id="textarea1" class="materialize-textarea"></textarea>
-                        <label for="textarea1"></label>
-                    </div>
-                </div>
-                <button class="btn waves-effect waves-light" id="btn-comment" type="submit" name="action">Comentar</button>
-            </form>
+          <form class="col s5 m5 l5 offset-s1 offset-m1 offset-l1 z-depth-3">
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1"></label>
+              </div>
+            </div>
+            <div class="col s5 m5 l5">
+              <button class="btn waves-effect waves-light" id="btn-comment" type="button" name="action">Comentar</button>
+            </div>
+          </form>
+          <div class="col s5 m5 l5 ">
+            <div class="col s2 m2 l2">
+              <img id="logo-gif" src="assets/images/gif.JPG" alt="gif-logo">
+            </div>
+            <div class="col s5 m5 l5 offset-s1">
+              <input id="input-gif" type="text" placeholder="busca un gif">
+            </div>
+          </div>
         </div>
 
-        </div>
+
 
         <!-- Links jQuery & JavaScript -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-        </div>
-        <button class="btn waves-effect waves-light" id="btn-comment" type="button" name="action">Comentar</button>
-        </form>
-        </div>
-
-
         <!-- CDN javascript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
         <!-- Link app.js -->
         <script src="js/app.js"></script>
         <script src="js/comentarios.js"></script>
+        <script src="js/gifs.js"></script>
+
 </body>
 
 </html>

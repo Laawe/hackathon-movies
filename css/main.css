@@ -53,7 +53,21 @@
     margin-bottom: 5vh;
 }
 
+
+/*estilo al span de comentarios */
+.row .col.offset-s2{
+    margin-bottom: 5vh;
+}
+.comment-movies{
+    text-align: center;    
+}
+
+/*estilo al botón y logo de gif*/
+#logo-gif{
+    height: 6vh;
+
 .car-img {
     height: 80vh;
     width: 80vw;
+
 }
