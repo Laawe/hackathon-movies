@@ -31,7 +31,7 @@ $(document).ready(function () {
 
 });
 
-var $api = "http://www.omdbapi.com/?t=";
+var $api = "https://www.omdbapi.com/?t=";
 var $userInput = $('#search').val();
 var $apiKey = '&apikey=7da64696';
 var $searcBtn = $('#search-btn');
@@ -70,7 +70,7 @@ $('#search-btn').on('click', function (event) {
       }
     }
   }
-  xhr.open("GET", "http://www.omdbapi.com/?t=" + $('#search').val().trim() + "&apikey=7da64696", true);
+  xhr.open("GET", "https://www.omdbapi.com/?t=" + $('#search').val().trim() + "&apikey=7da64696", true);
   xhr.send();
 
 });

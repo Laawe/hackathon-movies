@@ -35,10 +35,10 @@
       </div>
     </div>
   </div>
-  <!-- comentario -->
+
   <!-- nav bar -->
 
-    <div id="main">
+  <div id="main">
     <nav>
       <div class="nav-wrapper">
         <a href="#!" class="left brand-logo">
@@ -156,26 +156,34 @@
         </div>
       </form>
       <div class="col s5 m5 l5 ">
-        <div class="col s2 m2 l2">
-          <img id="logo-gif" src="assets/images/gif.JPG" alt="gif-logo">
-        </div>
-        <div class="col s5 m5 l5 offset-s1">
-          <input id="input-gif" type="text" placeholder="busca un gif">
-        </div>
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header">
+              <img id="logo-gif" src="assets/images/gif.JPG" alt="gif-logo">
+            </div>
+            <div class="collapsible-body">
+              <div class="col s4 m4 l4 offset-s1">
+                <input id="input-gif" type="text" placeholder="busca un gif">
+              </div>
+              <div class="col s5 m5 l5 offset-s1">
+                <button id="gif" class="btn waves-effect waves-light" type="button">buscar gif</button>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
-    </div>
 
 
 
-    <!-- Links jQuery & JavaScript -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <!-- CDN javascript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <!-- Link app.js -->
-    <script src="js/app.js"></script>
-    <script src="js/comentarios.js"></script>
-    <script src="js/gifs.js"></script>
+      <!-- Links jQuery & JavaScript -->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <!-- CDN javascript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+      <!-- Link app.js -->
+      <script src="js/app.js"></script>
+      <script src="js/comentarios.js"></script>
+      <script src="js/gifs.js"></script>
 
 </body>
 
