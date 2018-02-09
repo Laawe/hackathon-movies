@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <!-- link styles -->
     <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/main.css">
     <title>GifyCinema</title>
     <link rel="icon" type="image/png" href="../assets/images/filmicon.png">
 </head>
@@ -18,29 +19,56 @@
 <body>
     <!--Barra de Navegacion-->
     <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo"><img src="../assets/images/filmicon.png" alt="Logo"></a>
+        <div class="nav-wrapper col m12">
+            <a href="#" class="brand-logo left"><img src="../assets/images/filmicon.png" alt="Logo"></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="fas fa-bars"></i></a>
             <div class="row">
-                <div class="input-field col s3">
-                    <input placeholder="Search" id="searcher" type="text" class="validate">
-                </div>
-            </div>
-            <div class="row">
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <ul class="right">
                     <li>
-                        <a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="fas fa-user-circle"></i><span> Username</span> <i class="fas fa-caret-down"></i></a>
+                        <div class="center row">
+                            <div class="col s12 m4">
+                                <div class="row" id="topbarsearch">
+                                    <div class="input-field col s12 m12 red-text">
+                                        <input type="text" placeholder="Buscar peliculas" id="search">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                </ul>
-                <ul id="dropdown1" class="dropdown-content">
-                    <li><a href="#!">Mi perfil</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#!">Buzón</a></li>
-                    <li><a href="#!">Notificaciones</a></li>
-                    <li><a href="#!">Noticias</a></li>
-                    <li><a href="#!">Invitar Amigos</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#!">Configuración</a></li>
-                    <li><a href="#!">Cerrar sesión</a></li>
+                    <li>
+                        <button class="btn waves-effect waves-light col m12" id="search-btn" type="submit" name="action"><i class="fas fa-search"></i></button>
+                    </li>
+                    <li>
+                        <ul id="nav-mobile" class="left hide-on-med-and-down">
+                            <li>
+                                <a class="dropdown-button" href="#!" data-activates="dropdown1"><span>username  </span><i class="fas fa-caret-down"></i></a>
+                            </li>
+                        </ul>
+                        <ul id="dropdown1" class="dropdown-content">
+                            <li><a href="#!">Mi perfil</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#!">Buzón</a></li>
+                            <li><a href="#!">Notificaciones</a></li>
+                            <li><a href="#!">Noticias</a></li>
+                            <li><a href="#!">Invitar Amigos</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#!">Configuración</a></li>
+                            <li><a href="#!">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="side-nav" id="mobile-demo">
+                            <li><a href="#!">Mi perfil</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#!">Buzón</a></li>
+                            <li><a href="#!">Notificaciones</a></li>
+                            <li><a href="#!">Noticias</a></li>
+                            <li><a href="#!">Invitar Amigos</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#!">Configuración</a></li>
+                            <li><a href="#!">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -48,44 +76,31 @@
     <!--Bloque de usuario-->
     <div class="profile-view">
         <div class="profile-picture">
-            <img src="../assets/images/user-example.jpg" class="userimage center-align" alt="Exapmle">
+            <img src="../assets/images/user-example.jpg" class="userimage center" alt="Exapmle">
             <h2>Username Example</h2>
             <h4>@Username</h4>
-            <!--<div class="contributions">
-                <h2>Contributions</h2>
-            </div>
-            <div class="contributions">
-                <h2>Movie List</h2>
-            </div>
-            <div class="contributions">
-                <h2>Followers</h2>
-            </div>-->
         </div>
     </div>
     <!--Tabs Section-->
     <div class="row">
-
         <div class="col s12 lg12 divtab">
-
             <ul class="tabs">
-                <li class="tab col xs8"><a class="active" href="#test1">About</a></li>
-                <li class="tab col xs8"><a href="#test2">Conversations</a></li>
-                <li class="tab col xs8"><a href="#test3">Following</a></li>
+                <li class="tab col xs8"><a class="active" href="#test1">Acerca</a></li>
+                <li class="tab col xs8"><a href="#test2">Conversaciones</a></li>
+                <li class="tab col xs8"><a href="#test3">Siguiendo</a></li>
             </ul>
-            <a class="waves-effect waves-light btn"><i class="fas fa-cog"></i> Edit Profile</a>
+            <a class="waves-effect waves-light btn"><i class="fas fa-cog"></i> Editar Perfil</a>
         </div>
         <div id="test1" class="col s12">
             <div class="row">
-
-                <div class="description col s4">
-
+                <div class="description col s12">
                     <div class="bio">
                         <p>Aquí los usuarios pondrán una pequeña descripción biográfica
                         </p>
                     </div>
                     <hr>
                     <div class="tastes">
-                        <h6 style="color:lightgray;">Favorite Genres</h6>
+                        <h6 style="color:lightgray;">Géneros Favoritos.</h6>
                         <div class="chip">
                             Horror
                         </div>
@@ -104,7 +119,7 @@
                     </div>
                     <hr>
                     <div class="share">
-                        <h6 style="color: lightgray;">Share Profile</h6>
+                        <h6 style="color: lightgray;">Compartir Perfil</h6>
                         <div class="social" style="background-color:rgb(59,89,152);">
                             <a class="sns" href=""><i align="center" class="fab fa-facebook-f"></i></a>
                         </div>
@@ -122,37 +137,36 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="collections col s7 push-s1">
-                    <div class="col s12 m7">
+                <div class="collections col s10 m8 push-s1">
+                    <div class="col s12 m8">
                         <h4>Tus contribuciones</h4>
                         <hr>
-
                         <div class="card horizontal">
                             <div class="card-image">
                                 <img src="../assets/images/posters/deadpool.jpg">
                             </div>
                             <div class="card-stacked">
                                 <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                    <p>Es la primera pelicula del Universo Marvel que realmente me ha atrapado, el personaje principal es irreverente y se porta como antiheroe. Muy recomendable
+                                    </p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                    <a href="#">Califica esta pelicula</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col s12 m7">
+                    <div class="col s12 m8">
                         <div class="card horizontal">
                             <div class="card-image">
                                 <img src="../assets/images/posters/coco.jpg">
                             </div>
                             <div class="card-stacked">
                                 <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                    <p>Un hermoso reatrato de nuestra celebracion mas representativa, es conmovedora y te hara llorar como a mi.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                    <a href="#">Califica esta pelicula</a>
                                 </div>
                             </div>
                         </div>
@@ -166,7 +180,7 @@
                     <div class="row">
                         <div class="input-field col s6">
                             <img class="userimage" src="../assets/images/user-example.jpg" alt="User">
-                            <textarea id="textarea1" class="materialize-textarea" placeholder="Put a message"></textarea>
+                            <textarea id="textarea1" class="materialize-textarea" placeholder="Escribe un mensaje"></textarea>
                         </div>
                     </div>
                 </form>
@@ -177,20 +191,24 @@
                 <div class="col s12 m6">
                     <div class="card">
                         <div class="card-image">
-                            <img src="../assets/images/another-user.jpg">
-                            <span class="card-title">Beatrix Kiddo</span>
-                            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="fas fa-plus"></i></a>
+                            <img src="../assets/images/jimin.jpg">
+                            <span class="card-title">Park Jimin</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light blue"><i class="fas fa-check"></i></a>
                         </div>
                         <div class="card-content">
-                            <p>I am a weirdo, what a hell, am I doing here, I don't belong here. Don't mess with me.</p>
+                            <p>Bailarin y cantante de profesión, estoy de vacaciones en México y me encanta.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-
+    <footer class="page-footer">
+        <div class="container">
+            © 2018 Copyright GifyCinema
+            <a class="grey-text text-lighten-4 right" href="#!">More info</a>
+        </div>
+    </footer>
     <!-- Links jQuery & JavaScript -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
@@ -199,8 +217,8 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
     <!-- Link app.js -->
-    <script src="js/app.js"></script>
-    <script src="js/comentarios.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/comentarios.js"></script>
 </body>
 
-</html
+</html>

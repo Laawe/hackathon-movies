@@ -12,6 +12,13 @@
     position: absolute;
 }
 
+@media(max-width: 768px) {
+    #splash>.col>img {
+        width: 100vw;
+        height: 85vh;
+    }
+}
+
 
 /* estilos nav bar index.html*/
 
@@ -19,35 +26,56 @@
     display: none;
 }
 
+.row {
+    margin-bottom: 0%;
+}
+
+.brand-logo>img {
+    width: 4vw;
+}
+
+#nav-mobile {
+    margin-top: -5%;
+}
+
+#nav-mobile>li>a>img {
+    width: 3vw;
+    margin-top: 5px;
+}
+
 #search {
     background-color: white;
     padding-left: 10px;
     border-radius: 5px;
+    width: 25vw;
+    margin-left: 20vw;
     margin-bottom: .8vw;
     color: black;
 }
 
-.menu-desplegable {
-    color: white;
+@media (max-width: 768px) {
+    #search {
+        width: 35vw;
+    }
 }
 
-#filmicon {
-    height: 8vh;
-    padding-top: 1vh;
-    padding-left: 1vh;
+#search-btn {
+    margin-top: 30%;
+}
+
+.dropdown-button {
+    text-align: center;
+    margin-top: 3%;
+    width: 10vw;
 }
 
 
 /*Estilos para el carrusel*/
 
-
-/*.carousel {
-                                    margin-top: .1%;
-                                    overflow: hidden;
-                                    max-width: 1349px;
-                                    width: 100vw;
-                                    height: 65vh
-                                }*/
+.carousel {
+    max-width: 1349px;
+    width: 100vw;
+}
 
 #btn-comment {
     margin-bottom: 5vh;
@@ -55,19 +83,50 @@
 
 
 /*estilo al span de comentarios */
-.row .col.offset-s2{
+
+.comment-section {
+    margin-bottom: 10vh;
+}
+
+#container-post {
+    margin-top: 5vh;
+}
+
+.row .col.offset-s2 {
     margin-bottom: 5vh;
 }
-.comment-movies{
-    text-align: center;    
+
+.comment-movies {
+    text-align: center;
 }
 
+
 /*estilo al botón y logo de gif*/
-#logo-gif{
+
+#logo-gif {
     height: 6vh;
+}
 
-.car-img{
+.car-img {
     height: 80vh;
-    width: 80vw;
+    width: 95vw;
+}
 
+@media (max-width: 768px) {
+    .container-post {
+        margin-left: 2vw;
+    }
+    .car-img {
+        height: 40vh;
+    }
+    .gif-container {
+        margin-top: 3vh;
+    }
+}
+
+
+/*Estilo footer*/
+
+.page-footer {
+    padding: 10px;
 }
