@@ -12,7 +12,6 @@
     position: absolute;
 }
 
-
 /* estilos nav bar index.html*/
 
 #main {
@@ -37,37 +36,41 @@
     padding-left: 1vh;
 }
 
-
 /*Estilos para el carrusel*/
 
-
-/*.carousel {
-                                    margin-top: .1%;
-                                    overflow: hidden;
-                                    max-width: 1349px;
-                                    width: 100vw;
-                                    height: 65vh
-                                }*/
+.carousel {
+    margin-top: .1%;
+    overflow: hidden;
+    max-width: 1349px;
+    width: 100vw;
+    height: 65vh
+}
 
 #btn-comment {
     margin-bottom: 5vh;
 }
 
-
 /*estilo al span de comentarios */
-.row .col.offset-s2{
+
+.row .col.offset-s2 {
     margin-bottom: 5vh;
 }
-.comment-movies{
-    text-align: center;    
+
+.comment-movies {
+    text-align: center;
 }
 
 /*estilo al botón y logo de gif*/
-#logo-gif{
+
+#logo-gif {
     height: 6vh;
+    .car-img {
+        height: 80vh;
+        width: 80vw;
+    }
 
-.car-img{
-    height: 80vh;
-    width: 80vw;
 
+/*estilo al colapsable de gif */
+.collapsible-body{
+    height: auto;
 }
