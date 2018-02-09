@@ -99,6 +99,10 @@
     }
 }
 
+.input-body {
+    height: 50vh;
+}
+
 .card-image>.btn-floating {
     text-align: center;
 }
