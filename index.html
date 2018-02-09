@@ -110,7 +110,7 @@
             </div>
         </div>
 
-        <!--Tarjeta de pelicula-->
+    <!--Tarjeta de pelicula-->
 
         <div class="row movie-container" id="movie-container">
             <div class="col m8 l6 offset-m2 offset-l3">
@@ -137,6 +137,8 @@
 
         <!--Comentario(posteado)-->
         <div class="row pull-s2" id="container-post"></div>
+           <!-- container gifs-->
+        <div class="row" id="container-gifs"></div>
 
         <!--input comentario-->
         <div class="center row comment-section">
@@ -151,15 +153,26 @@
                     <button class="btn waves-effect waves-light" id="btn-comment" type="button" name="action">Comentar</button>
                 </div>
             </form>
-            <div class="col s9 m5 l5 offset-s1 gif-container">
-                <div class="col s2 m2 l2">
+             <div class="col s5 m5 l5 ">
+               <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                  <div class="collapsible-header">
                     <img id="logo-gif" src="assets/images/gif.JPG" alt="gif-logo">
-                </div>
-                <div class="col s5 m5 l5 ">
-                    <input id="input-gif" type="text" placeholder="buscar gif">
-                </div>
-            </div>
+                  </div>
+                  <div class="collapsible-body">
+                    <div class="col s4 m4 l4 offset-s1">
+                      <input id="input-gif" type="text" placeholder="busca un gif">
+                    </div>
+                   <div class="col s5 m5 l5 offset-s1">
+                     <button id="gif" class="btn waves-effect waves-light" type="button">buscar gif</button>
+               </div>
+              </div>
+            </li>
+         </ul>
         </div>
+     </div>
+          
+          
         <footer class="page-footer">
             <div class="container">
                 © 2018 Copyright GifyCinema
