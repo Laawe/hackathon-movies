@@ -17,7 +17,7 @@ $('#btn-comment').on('click', function (e) {
     var $imgProfile = $('<img />', {
         "class": "profile-pic",
         "id": "profile-pic",
-        "src": "assets/images/incompresa.jpg"
+        "src": localStorage.photo
     });
     // append to chipDiv
     var $spanName = $('<span />', {
@@ -35,7 +35,7 @@ $('#btn-comment').on('click', function (e) {
     });
     //
     $spanComment.text($textarea);
-    $spanName.text("Law");
+    $spanName.text(localStorage.name);
     //
     $chipDiv.append($imgProfile);
     $chipDiv.append($spanName);
