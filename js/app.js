@@ -31,6 +31,31 @@ $(document).ready(function () {
 
 });
 
+var provider = new firebase.auth.GoogleAuthProvider(); //--------------------
+
+$('#buttonGoogle').click(function () {
+  firebase.auth()
+    .signInWithPopup(provider)
+    .then(function (result) {
+      console.log(result.user);
+      var name = result.user.displayName;
+      //console.log(name);
+      var photo = result.user.photoURL;
+      //console.log(photo);
+
+      //colocando photo de perfil y nombre de usuario en pagina
+      localStorage.setItem("name", result.user.displayName);
+      localStorage.setItem("photo", result.user.photoURL);
+      localStorage.name = result.user.displayName
+      localStorage.photo = result.user.photoURL
+      $('#filmicon').attr('src', photo);
+      $('#profile-pic').attr(localStorage.photo);
+      $('#profile-name').text(localStorage.name);
+      $('profile-section-photo').attr('src', localStorage.photo);
+    });
+}); //-------------------------------------------------
+
+
 var $api = "https://www.omdbapi.com/?t=";
 var $userInput = $('#search').val();
 var $apiKey = '&apikey=7da64696';
