@@ -116,9 +116,3 @@ $('#search-btn').on('click', function (event) {
     xhr.send();
 
 });
-/*fetch($apiURL).then(function(response){
- console.log('Status', response.status);
- if (!response.ok){
-   throw response.statusText;
- }
-});*/
