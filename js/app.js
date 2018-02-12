@@ -59,7 +59,7 @@ $('#buttonGoogle').click(function () {
 });
 
 function writeUserData(userId, name, imageUrl) {
-    firebase.database().ref('users/' + userId).set({
+    firebase.database().ref('users/').set({
         username: name,
         profile_picture: imageUrl
     });
