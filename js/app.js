@@ -53,13 +53,13 @@ $('#buttonGoogle').click(function () {
             $('#profile-name').text(localStorage.name);
             $('profile-section-photo').attr('src', localStorage.photo);
 
-            writeUserData(0, name, photo);
+            writeUserData(name, photo);
         });
 
 });
 
-function writeUserData(userId, name, imageUrl) {
-    firebase.database().ref('users/').set({
+function writeUserData(name, imageUrl) {
+    firebase.database().ref('users').set({
         username: name,
         profile_picture: imageUrl
     });
