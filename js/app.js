@@ -1,15 +1,15 @@
 //Funcion para la vista splash
-$(document).ready(function() {
-    setTimeout(function() {
+$(document).ready(function () {
+    setTimeout(function () {
         $("#splash").fadeOut(500);
     }, 3000); //oculta la pantalla inicial
-    setTimeout(function() {
+    setTimeout(function () {
         $("#main").fadeIn(500);
     }, 3000); /*Muestra la pantalla Principal*/
 });
 
 
-$(document).ready(function() {
+$(document).ready(function () {
     //funcionalidad Materialize
 
     // funcion para desplegar menú
@@ -33,10 +33,10 @@ $(document).ready(function() {
 
 var provider = new firebase.auth.GoogleAuthProvider(); //--------------------
 
-$('#buttonGoogle').click(function() {
+$('#buttonGoogle').click(function () {
     firebase.auth()
         .signInWithPopup(provider)
-        .then(function(result) {
+        .then(function (result) {
             console.log(result.user);
             var name = result.user.displayName;
             //console.log(name);
@@ -52,10 +52,21 @@ $('#buttonGoogle').click(function() {
             $('#profile-pic').attr(localStorage.photo);
             $('#profile-name').text(localStorage.name);
             $('profile-section-photo').attr('src', localStorage.photo);
+
+            writeUserData(0, name, photo);
         });
+
 });
 
-$('#reload').click(function() {
+function writeUserData(userId, name, imageUrl) {
+    firebase.database().ref('users/' + userId).set({
+        username: name,
+        profile_picture: imageUrl
+    });
+}
+
+
+$('#reload').click(function () {
     location.reload();
 }); /* Para 'cerrar' sesion del usuario */
 
@@ -70,7 +81,7 @@ var $searcBtn = $('#search-btn');
 
 
 //función para hacer una busqueda de pelicula
-$('#search-btn').on('click', function(event) {
+$('#search-btn').on('click', function (event) {
     event.preventDefault;
     $('#carousel').hide();
     $('#movie-container').show();
@@ -80,7 +91,7 @@ $('#search-btn').on('click', function(event) {
 
     var xhr = new XMLHttpRequest();
     console.log(xhr);
-    xhr.onreadystatechange = function(e) {
+    xhr.onreadystatechange = function (e) {
         if (this.readyState === 4) {
             if (this.status === 200) {
                 var response = JSON.parse(this.response);
