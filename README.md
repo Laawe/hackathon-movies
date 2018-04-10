@@ -2,6 +2,8 @@
 
 Bienvenida a la hackathon de finalización del plan común. En esta ocasión la temática será el entretenimiento y crearemos soluciones/productos utilizando un API.
 
+![hackathon](https://user-images.githubusercontent.com/32857528/38576822-d4149bfe-3cc4-11e8-866b-5a7e7135c87e.png)
+
 
 ## Reglas generales:
 
